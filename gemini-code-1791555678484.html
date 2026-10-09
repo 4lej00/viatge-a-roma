@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Roma - Viatge Educatiu</title>
+    <!-- Tailwind CSS per a un disseny modern i net -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Transicions super fluides */
+        .transition-all-custom {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
+
+    <!-- Header / Hero -->
+    <header class="relative bg-slate-900 text-white overflow-hidden py-24 px-6 sm:px-12 text-center">
+        <div class="absolute inset-0 opacity-30 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1920&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+        
+        <div class="relative max-w-4xl mx-auto animate-fade-in">
+            <span class="inline-block bg-amber-500/20 text-amber-400 font-semibold px-4 py-1.5 rounded-full text-sm mb-4 border border-amber-500/30">Vídeo Educatiu • Roma</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">Descobreix Roma</h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                Guia completa del viatge: hotel, ruta turística detallada, preus d'entrades i recomanacions per a una experiència inoblidable.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+
+        <!-- Secció 1: Hotel -->
+        <section id="hotel" class="animate-fade-in">
+            <div class="flex items-center space-x-3 mb-8">
+                <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-amber-500 text-white font-bold text-lg shadow-lg shadow-amber-500/30">1</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Allotjament (Hotel)</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-100 transition-all-custom card-hover">
+                <div class="space-y-6">
+                    <div>
+                        <span class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2">Hotel 3 Estrelles</span>
+                        <h3 class="text-2xl font-bold text-slate-900">Hotel Center Roma</h3>
+                        <p class="text-slate-500 mt-1">Via Giovanni Giolitti, 443</p>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        Un acollidor hotel de tres estrelles situat estratègicament a prop de l'estació de termini, ideal per moure'st amb total comoditat per tota la ciutat.
+                    </p>
+                    <div class="bg-amber-50/60 border border-amber-200/60 rounded-2xl p-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-700 font-medium">Preu aproximat:</span>
+                            <span class="text-xl font-extrabold text-amber-600">112 € <span class="text-xs font-normal text-slate-500">/ nit (inclou esmorzar bufet)</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop" alt="Hotel exterior" class="rounded-2xl object-cover h-48 w-full shadow-sm hover:scale-105 transition-all-custom">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=600&auto=format&fit=crop" alt="Habitació hotel" class="rounded-2xl object-cover h-48 w-full shadow-sm hover:scale-105 transition-all-custom">
+                </div>
+            </div>
+        </section>
+
+        <!-- Secció 2: Ruta Turística -->
+        <section id="ruta" class="animate-fade-in">
+            <div class="flex items-center space-x-3 mb-8">
+                <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-amber-500 text-white font-bold text-lg shadow-lg shadow-amber-500/30">2</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Ruta Turística per Roma</h2>
+            </div>
+            
+            <p class="text-slate-600 mb-8 max-w-3xl leading-relaxed">
+                Un recorregut dissenyat pràcticament per tota Roma. Comença al Mercat Central (estació de termini), passa pel Colosseu, Fòrum Romà, Panteó, Fontana di Trevi i culmina a la Ciutat del Vaticà.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Punt 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 transition-all-custom card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-40 rounded-xl overflow-hidden mb-4 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=600&auto=format&fit=crop" alt="Mercat Central" class="w-full h-full object-cover hover:scale-105 transition-all-custom">
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Mercat Central de Roma</h3>
+                        <p class="text-slate-600 text-sm">Punt de partida i estació de termini propera a l'hotel.</p>
+                    </div>
+                </div>
+
+                <!-- Punt 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 transition-all-custom card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-40 rounded-xl overflow-hidden mb-4 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=600&auto=format&fit=crop" alt="Colosseu Romà" class="w-full h-full object-cover hover:scale-105 transition-all-custom">
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Colosseu i Fòrum Romà</h3>
+                        <p class="text-slate-600 text-sm">Monuments històrics essencials de l'antiga Roma.</p>
+                    </div>
+                </div>
+
+                <!-- Punt 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 transition-all-custom card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-40 rounded-xl overflow-hidden mb-4 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1543429776-2782fc8e1acd?q=80&w=600&auto=format&fit=crop" alt="Panteó" class="w-full h-full object-cover hover:scale-105 transition-all-custom">
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Panteó de Roma</h3>
+                        <p class="text-slate-600 text-sm">Obra mestra de l'arquitectura clàssica romana.</p>
+                    </div>
+                </div>
+
+                <!-- Punt 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 transition-all-custom card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-40 rounded-xl overflow-hidden mb-4 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1514896856597-f5c531b2d3d4?q=80&w=600&auto=format&fit=crop" alt="Fontana di Trevi" class="w-full h-full object-cover hover:scale-105 transition-all-custom">
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Fontana di Trevi</h3>
+                        <p class="text-slate-600 text-sm">La font més famosa i monumental de la ciutat.</p>
+                    </div>
+                </div>
+
+                <!-- Punt 5 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 transition-all-custom card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="h-40 rounded-xl overflow-hidden mb-4 bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?q=80&w=600&auto=format&fit=crop" alt="Vaticà" class="w-full h-full object-cover hover:scale-105 transition-all-custom">
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-2">Basílica de Sant Pere</h3>
+                        <p class="text-slate-600 text-sm">Imponent temple situat a la Ciutat del Vaticà.</p>
+                    </div>
+                </div>
+
+                <!-- Punt 6: Bus Turístic -->
+                <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-6 shadow-sm border border-slate-800 transition-all-custom card-hover flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">Opcional</span>
+                        <h3 class="font-bold text-lg mb-2">Bus Panoràmic (I Love Rome City Tour)</h3>
+                        <p class="text-slate-300 text-sm">La millor opció "Hop On Hop Off" per desplaçar-se còmodament entre el Colosseu i el Fòrum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secció 3: Preus de Tot -->
+        <section id="preus" class="animate-fade-in">
+            <div class="flex items-center space-x-3 mb-8">
+                <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-amber-500 text-white font-bold text-lg shadow-lg shadow-amber-500/30">3</span>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">Preus i Entrades</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Colosseu i Fòrum -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 transition-all-custom card-hover">
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Colosseu i Fòrum Romà</h3>
+                    <div class="text-3xl font-extrabold text-amber-600 my-4">18 €</div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Inclou desenes d'entrades il·limitades durant 24 hores per a tots dos monuments.
+                    </p>
+                </div>
+
+                <!-- Basílica de Sant Pere -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 transition-all-custom card-hover">
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Basílica de Sant Pere</h3>
+                    <div class="text-3xl font-extrabold text-amber-600 my-4">Gratuïta <span class="text-xs font-normal text-slate-500">(o 9€ amb audioguia)</span></div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        L'entrada general és gratuïta (amb cues de fins a 120 minuts). Per 9 € pots evitar cues i inclou audioguia.
+                    </p>
+                </div>
+
+                <!-- Fontana di Trevi & Panteó -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 transition-all-custom card-hover">
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Fontana di Trevi i Panteó</h3>
+                    <div class="text-3xl font-extrabold text-amber-600 my-4">2 € - 7 €</div>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Fontana di Trevi costa 2 € (pagament només amb targeta). El Panteó de Roma té un preu de 5 a 7 €.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center border-t border-slate-800">
+        <p class="text-sm">Guia Educativa de Roma • Creat per a GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
